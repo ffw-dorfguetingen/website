@@ -57,6 +57,7 @@ weight = 2
 
 #################### Default Parameters ################################
 [params]
+canonicalURL = "https://www.feuerwehr-dorfguetingen.de"
 description = "This is meta description"
 author = "Themefisher"
 phone = "+49 (0) 9852 4665"
