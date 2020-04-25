@@ -3,4 +3,4 @@
 	url = https://github.com/themefisher/airspace-hugo.git
 [submodule "themes/airspace-hugo-events"]
 	path = themes/airspace-hugo-events
-	url = git@github.com:baitando/airspace-hugo-events.git
+	url = https://github.com/baitando/airspace-hugo-events.git
