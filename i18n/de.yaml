@@ -1,0 +1,29 @@
+- id: phone
+  translation: Telefon
+- id: email
+  translation: E-Mail
+- id: location
+  translation: Ort
+- id: address_title
+  translation: Soziale Netzwerke
+- id: submit
+  translation: Nachricht absenden
+# MOD-1 New translations
+- id: user_name
+  translation: Name
+- id: user_email
+  translation: E-Mail Adresse
+- id: user_subject
+  translation: Betreff
+- id: user_message
+  translation: Ihre Nachricht
+- id: gdpr_message
+  translation: Wir nutzen Google Analytics um die Nutzung unserer Internetseite zu analysieren. Erlauben Sie das? Sie können Ihre Einstellung jederzeit ändern.
+- id: gdpr_allow
+  translation: Erlauben
+- id: gdpr_deny
+  translation: Verweigern
+- id: gdpr_policy
+  translation: Datenschutzeinstellungen
+- id: gdpr_link
+  translation: Siehe Datenschutzerklärung

@@ -1,0 +1,25 @@
+############################### Banner ##############################
+banner:
+  enable : true
+  bg_image : "images/slider-bg.jpg"
+  title : "Freiwillige Feuerwehr Dorfgütingen"
+  content : "Herzlich Willkommen auf den Internetseiten der Freiwilligen Feuerwehr Dorfgütingen"
+  button:
+    enable : true
+    label: "Besuchen Sie uns auch auf Facebook"
+    link: "https://www.facebook.com/ffwdorfguetingen/"
+
+about:
+  enable : false
+
+portfolio:
+  enable : false
+
+service:
+  enable : false
+
+cta:
+  enable : false
+
+funfacts:
+  enable : false

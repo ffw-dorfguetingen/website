@@ -1,0 +1,6 @@
+[submodule "themes/airspace-hugo"]
+	path = themes/airspace-hugo
+	url = https://github.com/themefisher/airspace-hugo.git
+[submodule "themes/airspace-hugo-events"]
+	path = themes/airspace-hugo-events
+	url = git@github.com:baitando/airspace-hugo-events.git

@@ -1,0 +1,90 @@
+################################# Default Configuration ###################
+baseURL = "https://www.feuerwehr-dorfguetingen.de"
+title = "FFW Dorfgütingen"
+theme = ["airspace-hugo-events", "airspace-hugo"]
+
+defaultContentLanguage = "de"
+
+#################################### Plugins ##############################
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/Ionicons/css/ionicons.min.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "plugins/fontawesome/css/all.css"
+[[params.plugins.css]]
+link = "plugins/cookieconsent/cookieconsent.min.css"
+
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+[[params.plugins.js]]
+link = "plugins/cookieconsent/cookieconsent.min.js"
+
+############################## Navigation ###############################
+[[menu.main]]
+name = "Termine"
+URL = "termine"
+weight = 1
+
+[[menu.main]]
+name = "Kontakt"
+URL = "/kontakt/"
+weight = 2
+
+[[menu.footer]]
+name = "Datenschutzerklärung"
+URL = "/datenschutzerklaerung/"
+weight = 1
+
+[[menu.footer]]
+name = "Impressum"
+URL = "/impressum/"
+weight = 2
+
+#################### Default Parameters ################################
+[params]
+description = "This is meta description"
+author = "Themefisher"
+phone = "+49 (0) 9852 4665"
+email = "vorsitzender@feuerwehr-dorfguetingen.de"
+location = "Dorfgütingen, 91555 Feuchtwangen"
+contact_form_action = "https://formspree.io/mrgawvaz"
+google_analitycs_id = "fdg"
+
+# GDPR
+[params.gdpr]
+enable = true
+data_privacy_url = "https://www.feuerwehr-dorfguetingen.de/datenschutzerklaerung/"
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = ""
+
+############################# Social Site ########################
+[[params.social]]
+icon = "fab fa-facebook-square"
+link = "https://www.facebook.com/ffwdorfguetingen"
+
+################################ German Language ########################
+[Languages.de]
+languageName = "DE"
+languageCode = "de-de"
+contentDir = "content/german"
+weight = 1
+home = "Startseite"
+copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
