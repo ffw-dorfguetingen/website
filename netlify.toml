@@ -1,6 +1,6 @@
 [context.production]
     environment = { HUGO_VERSION = "0.69.0" }
-    command = "hugo --gc --minify --buildFuture
+    command = "hugo --gc --minify --buildFuture"
 
 [context.deploy-preview]
     environment = { HUGO_VERSION = "0.69.0" }
