@@ -68,13 +68,17 @@ google_analitycs_id = "fdg"
 
 # GDPR
 [params.gdpr]
-enable = true
+enable = false
 data_privacy_url = "/datenschutzerklaerung/"
 
 # Preloader
 [params.preloader]
 enable = true
 preloader = ""
+
+############################# Osano Cookie Consent ########################
+[params.osano]
+scriptURL = "https://cmp.osano.com/16CIDDRxGLrLs3RUm/3b8a18ca-596c-49fd-926c-e4e53102154c/osano.js"
 
 ############################# Social Site ########################
 [[params.social]]
