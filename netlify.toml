@@ -5,3 +5,22 @@
 [context.deploy-preview]
     environment = { HUGO_VERSION = "0.69.0" }
     command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+[[redirects]]
+  from = "https://feuerwehr-dorfguetingen.netlify.app/*"
+  to = "https://www.feuerwehr-dorfguetingen.de/:splat"
+  status = 301
+  force = true
