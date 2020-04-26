@@ -69,7 +69,7 @@ google_analitycs_id = "fdg"
 # GDPR
 [params.gdpr]
 enable = true
-data_privacy_url = "https://www.feuerwehr-dorfguetingen.de/datenschutzerklaerung/"
+data_privacy_url = "/datenschutzerklaerung/"
 
 # Preloader
 [params.preloader]
