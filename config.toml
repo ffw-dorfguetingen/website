@@ -64,7 +64,7 @@ phone = "+49 (0) 9852 4665"
 email = "vorsitzender@feuerwehr-dorfguetingen.de"
 location = "Dorfgütingen, 91555 Feuchtwangen"
 contact_form_action = "https://formspree.io/mrgawvaz"
-google_analitycs_id = "fdg"
+google_analitycs_id = "UA-60595166-1"
 
 # GDPR
 [params.gdpr]
