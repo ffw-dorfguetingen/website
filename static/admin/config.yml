@@ -1,22 +1,49 @@
 backend:
-#  name: test-repo
+  #  name: test-repo
   name: git-gateway
 #  branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: "termine" # Used in routes, e.g., /admin/collections/blog
-    label: "Termine" # Used in the UI
+  - name: "events" # Used in routes, e.g., /admin/collections/blog
+    label: "Events" # Used in the UI
+    label_singular: "Event"
     folder: "content/german/termine" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}"
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Start Date", name: "start_date", widget: "date"}
-      - {label: "End Date", name: "end_date", widget: "date"}
-      - {label: "Icon", name: "Icon", widget: "string"}
-      - {label: "Type", name: "type", widget: "hidden", default: "event"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Start Date"
+        name: "start_date"
+        widget: "datetime"
+        dateFormat: "DD.MM.YYYY"
+        timeFormat: false
+      - label: "End Date"
+        name: "end_date"
+        widget: "datetime"
+        dateFormat: "DD.MM.YYYY"
+        default: false
+        timeFormat: false
+        required: false
+      - label: "Icon"
+        name: "icon"
+        widget: "select"
+        options:
+          - label: "Übung"
+            value: "fas fa-fire-extinguisher fa-3x"
+          - label: "Grillfest"
+            value: "fas fa-utensils fa-3x"
+          - label: "Jubiläum"
+            value: "fas fa-award fa-3x"
+      - label: "Type"
+        name: "type"
+        widget: "hidden"
+        default: "event"
+      - label: "Body"
+        name: "body"
+        widget: "text"

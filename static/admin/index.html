@@ -1,13 +1,82 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 <!-- Include the script that builds the page and powers Netlify CMS -->
 <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+<script>
+    CMS.registerPreviewStyle("/plugins/bootstrap/bootstrap.min.css");
+    CMS.registerPreviewStyle("/plugins/Ionicons/css/ionicons.min.css");
+    CMS.registerPreviewStyle("/plugins/magnific-popup/magnific-popup.css");
+    CMS.registerPreviewStyle("/plugins/slick/slick.css");
+    CMS.registerPreviewStyle("/plugins/fontawesome/css/all.css");
+    CMS.registerPreviewStyle("/plugins/cookieconsent/cookieconsent.min.css");
+    CMS.registerPreviewStyle("/scss/style.min.css");
+
+    var PostPreview = createClass({
+        formatDate: function (start, end) {
+            var startDate = new Date(start),
+                startMonth = '' + (startDate.getMonth() + 1),
+                startDay = '' + startDate.getDate(),
+                startYear = startDate.getFullYear();
+
+            if (startMonth.length < 2)
+                startMonth = '0' + startMonth;
+            if (startDay.length < 2)
+                startDay = '0' + startDay;
+
+            if (end) {
+                var endDate = new Date(end),
+                    endMonth = '' + (endDate.getMonth() + 1),
+                    endDay = '' + endDate.getDate(),
+                    endYear = endDate.getFullYear();
+
+                if (endMonth.length < 2)
+                    endMonth = '0' + endMonth;
+                if (endDay.length < 2)
+                    endDay = '0' + endDay;
+
+                if (startYear === endYear) {
+                    if (startMonth === endMonth) {
+                        return [startDay].join('.') + ' - ' + [endDay, endMonth, endYear].join('.');
+                    } else {
+                        return [startDay, startMonth].join('.') + ' - ' + [endDay, endMonth, endYear].join('.');
+                    }
+                } else {
+                    return [startDay, startMonth, startYear].join('.') + ' - ' + [endDay, endMonth, endYear].join('.');
+                }
+            } else {
+                return [startDay, startMonth, startYear].join('.');
+            }
+        },
+        render: function () {
+            var entry = this.props.entry;
+            var startDate = entry.getIn(['data', 'start_date']);
+            var endDate = entry.getIn(['data', 'end_date']);
+
+            var title = entry.getIn(['data', 'title']) ? this.formatDate(startDate, endDate) + ' ' + entry.getIn(['data', 'title']) : this.formatDate(startDate, endDate);
+            var icon = entry.getIn(['data', 'icon']) ? entry.getIn(['data', 'icon']) : "fas fa-fire-extinguisher fa-3x";
+            var body = entry.getIn(['data', 'body']) ? entry.getIn(['data', 'body']) : '';
+
+            return h('div', {"className": "page-wrapper"},
+                h('div', {"className": "container-fluid"},
+                    h('div', {"className": "row"},
+                        h('div', {"className": "col-md-4 event"},
+                            h('div', {"className": "block text-center"},
+                                h('i', {"className": icon}, ''),
+                                h('h3', {"className": "event-title"}, title),
+                                h('p', {}, body)))))
+            );
+        }
+    });
+
+    CMS.registerPreviewTemplate("events", PostPreview);
+</script>
 </body>
 </html>
