@@ -43,6 +43,7 @@ collections:
             value: "fas fa-utensils fa-3x"
           - label: "Jubiläum"
             value: "fas fa-award fa-3x"
+        default: "fas fa-fire-extinguisher fa-3x"
       - label: "Type"
         name: "type"
         widget: "hidden"
