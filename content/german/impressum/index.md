@@ -11,7 +11,7 @@ Rödenweiler 7\
 91555 Feuchtwangen\
 Deutschland
 
-Telefon: +49 (0) 9852 616713\ 
+Telefon: +49 (0) 9852 616713\
 E-Mail: vorsitzender@feuerwehr-dorfguetingen.de
 
 Registergericht: Amtsgericht Ansbach\
