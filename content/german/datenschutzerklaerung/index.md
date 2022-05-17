@@ -21,11 +21,11 @@ III. Informationen zur Datenverarbeitung
 Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:
 
 Freiwillige Feuerwehr Dorfgütingen e.V.\
-Archshofen 88\
+Rödenweiler 7\
 91555 Feuchtwangen\
 Deutschland
 
-Telefon: +49 (0) 9852 4665\
+Telefon: +49 (0) 9852 616713\
 E-Mail: vorsitzender@feuerwehr-dorfguetingen.de
 
 # II. Rechte der Nutzer und Betroffenen
