@@ -10,7 +10,7 @@ banner:
     link: "https://www.facebook.com/ffwdorfguetingen/"
 
 about:
-  enable : true
+  enable : false
   image : "images/kirchweih.png"
 
 portfolio:

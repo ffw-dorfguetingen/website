@@ -35,10 +35,10 @@ link = "plugins/google-map/gmap.js"
 link = "plugins/cookieconsent/cookieconsent.min.js"
 
 ############################## Navigation ###############################
-[[menu.main]]
-name = "Termine"
-URL = "termine"
-weight = 1
+#[[menu.main]]
+#name = "Termine"
+#URL = "termine"
+#weight = 1
 
 [[menu.main]]
 name = "Kontakt"
